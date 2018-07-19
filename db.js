@@ -2,8 +2,8 @@
 var mongoClient = require("mongodb").MongoClient;
 
 //create connection with database
-mongoClient.connect("mongodb://localhost/workshoptdc")
-            .then(conn => global.conn = conn.db("workshoptdc"))
+mongoClient.connect("mongodb://localhost/todoapp")
+            .then(conn => global.conn = conn.db("todoapp"))
             .catch(err => console.log(err))
 
 //list all checklist items
