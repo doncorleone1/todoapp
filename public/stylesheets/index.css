@@ -1,0 +1,72 @@
+.specs-container {
+  margin-top: 2%;
+  width: 25%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1%;
+}
+
+.specs-delete {
+  color: red;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+}
+
+.specs-row {
+  border-width: 1px;
+  border-bottom-style: solid;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 3%;
+}
+
+.specs-input {
+  border: none;
+  margin-top: 5%;
+}
+
+.specs-item {
+  margin-top: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 70%;
+}
+
+.specs-edit {
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  color: black;
+}
+
+.specs-check {
+  font-size: 25px;
+  width: 8%;
+  margin-top: 2%;
+  margin-left: 2%;
+  text-align: center;
+}
+
+.span-unchecked {
+  cursor: pointer;
+}
+
+.span-cheked {
+  background-color: green;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  margin-top: 3%;
+}
+
+.green {
+  color: green;
+  cursor: pointer;
+}
