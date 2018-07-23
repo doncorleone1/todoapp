@@ -31,7 +31,8 @@
   margin-top: 1%;
   margin-right: 2%;
   margin-left: 2%;
-  width: 70%;
+  cursor: auto;
+  width: 75%;
 }
 
 .specs-edit {
@@ -59,7 +60,6 @@
 }
 
 input {
-  cursor: pointer;
 }
 
 button {
