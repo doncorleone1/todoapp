@@ -15,12 +15,15 @@
     
     <div class="container specs-container" id="mainContainer">
         <% items.forEach(function(item){ %>
-          <div class="row specs-row">
+          <div class="row specs-row" id= '<%= item._id %>'>
               <% if(item.status == 'not done') { %>
                 <span class="material-icons span-unchecked specs-check">radio_button_unchecked</span>
                 <input type="text" value= '<%= item.task %>' class="form-control specs-item" readonly>
+              <% } else { %>
+                <span class="glyphicon green specs-check">&#xe089;</span>
+                <input type="text" value = '<%= item.task %>' class="form-control specs-item" style="text-decoration: line-through;" readonly>
               <% } %>
-              <a href="/delete/<%= item._id %>" class="specs-delete"><span class="glyphicon glyphicon-trash "></span></a>
+              <span class="glyphicon glyphicon-trash specs-delete"></span>
           </div>
         <% }) %>
         <div class="row specs-input">
