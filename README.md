@@ -1,6 +1,7 @@
 # todoapp
 
-Setting up environment:
+Setting up environment:\
+
 1 - You need to have node.js installed in your machine;\
 2 - You need to have express.js installed in your machine;\
 3 - You need to have mongoDB installed in your machine;\
