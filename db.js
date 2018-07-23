@@ -23,8 +23,12 @@ function findOne(id, callback) {
 }
 
 //update checklist item
-function update(id, item, callback) {
-    global.conn.collection("items").updateOne({_id:new ObjectId(id)}, {$set:{task:item.task, status:item.status}}, callback);
+// function update(id, item, callback) {
+//     global.conn.collection("items").updateOne({_id:new ObjectId(id)}, {$set:{task:item.task, status:item.status}}, callback);
+// }
+
+function update(id, status, callback) {
+    global.conn.collection("items").updateOne({_id:new ObjectId(id)}, {$set: {status: status}}, callback);
 }
 
 function deleteOne(id, callback) {
