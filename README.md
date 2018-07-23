@@ -18,6 +18,6 @@ Setting up environment:
 14 - Go to the root folder of this application typing "cd C:\node\todoapp";\
 15 - Type "npm install -S mongodb". This will install the mongodb module;\
 16 - Type "npm start". This will initialize your application;\
-17 - In your browser, go to "localhost:3000".\
+17 - In your browser, go to "localhost:3000".
 
 You are all set now.
