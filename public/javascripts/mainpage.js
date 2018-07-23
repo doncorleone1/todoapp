@@ -4,12 +4,12 @@ $(document).ready(function () {
 
   //show new item
   function showNewItem(response) {
-    var prepend = $('.specs-input');
+    var prepend = $('.style-input');
     prepend.before('\
-    <div class="row specs-row" id= "' + response._id + '">\
-        <span class="material-icons span-unchecked specs-check">radio_button_unchecked</span>\
-        <input type="text" value = "' + response.task + '" class="form-control specs-item" readonly>\
-        <span class="glyphicon glyphicon-trash specs-delete"></span>\
+    <div class="row style-row" id= "' + response._id + '">\
+        <span class="material-icons span-unchecked style-check">radio_button_unchecked</span>\
+        <input type="text" value = "' + response.task + '" class="form-control style-item" readonly>\
+        <span class="glyphicon glyphicon-trash style-delete"></span>\
       </div>');
   }
 
@@ -32,7 +32,7 @@ $(document).ready(function () {
   });
 
   //update an item using ajax
-  $("body").delegate(".specs-check", "click", function () {
+  $("body").delegate(".style-check", "click", function () {
     
     var id = $(this).parent().attr('id');
     console.log(id);
@@ -45,7 +45,7 @@ $(document).ready(function () {
           console.log(response);
       }
     });
-    
+
     if ($(this).html() === "radio_button_unchecked") {
       $(this).html("&#xe089;");
       $(this).next().css({ "text-decoration": "line-through" });
@@ -57,7 +57,7 @@ $(document).ready(function () {
   });
 
   //delete an item using ajax
-  $("body").delegate(".specs-delete", "click", function () {
+  $("body").delegate(".style-delete", "click", function () {
     if (confirm('Are you sure you want to delete?')) {
       var id = $(this).parent().attr('id');
       $.ajax({

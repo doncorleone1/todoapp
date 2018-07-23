@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <link rel="shortcut icon" href="images/to-do-icon.png" />
     <title><%= title %></title>
 
     <meta charset="utf-8">
@@ -12,32 +13,33 @@
     <link rel="stylesheet" href="stylesheets/index.css">
   </head>
   <body>
-    
-    <div class="container specs-container" id="mainContainer">
-        <% items.forEach(function(item){ %>
-          <div class="row specs-row" id= '<%= item._id %>'>
-              <% if(item.status == 'not done') { %>
-                <span class="material-icons span-unchecked specs-check">radio_button_unchecked</span>
-                <input type="text" value= '<%= item.task %>' class="form-control specs-item" readonly>
-              <% } else { %>
-                <span class="glyphicon green specs-check">&#xe089;</span>
-                <input type="text" value = '<%= item.task %>' class="form-control specs-item" style="text-decoration: line-through;" readonly>
-              <% } %>
-              <span class="glyphicon glyphicon-trash specs-delete"></span>
-          </div>
-        <% }) %>
-        <div class="row specs-input">
-          <div class="col-sm-12">
-            <form id="create-form">
-              <input type="text" id="tsk" name="task" placeholder="Insert new task" class="form-control">
-              <button type="submit" name="insert-button" id="insert-btn" class="btn btn-success">Insert</button>
-            </form>
-          </div>
+
+    <div class="container style-container" id="mainContainer">
+      <!-- Shows all items -->
+      <% items.forEach(function(item){ %>
+        <div class="row style-row" id= '<%= item._id %>'>
+            <% if(item.status == 'not done') { %>
+              <span class="material-icons span-unchecked style-check">radio_button_unchecked</span>
+              <input type="text" value= '<%= item.task %>' class="form-control style-item" readonly>
+            <% } else { %>
+              <span class="glyphicon green style-check">&#xe089;</span>
+              <input type="text" value = '<%= item.task %>' class="form-control style-item" style="text-decoration: line-through;" readonly>
+            <% } %>
+              <span class="glyphicon glyphicon-trash style-delete"></span>
         </div>
+      <% }) %>
+
+      <div class="row style-input">
+        <div class="col-sm-12">
+          <form id="create-form">
+            <input type="text" id="tsk" name="task" placeholder="Insert new task" class="form-control">
+            <button type="submit" name="insert-button" id="insert-btn" class="btn btn-success">Insert</button>
+          </form>
+        </div>
+      </div>
     </div>
 
     <script src="javascripts/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="/javascripts/mainpage.js"></script>
   </body>

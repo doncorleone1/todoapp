@@ -1,49 +1,13 @@
-.specs-container {
-  margin-top: 2%;
-  width: 25%;
-  border-width: 1px;
-  border-style: solid;
-  padding: 1%;
-}
-
-.specs-delete {
-  color: red;
-  font-size: 20px;
-  margin-left: 2%;
-  margin-top: 2%;
+.green {
+  color: green;
   cursor: pointer;
 }
 
-.specs-row {
-  border-width: 1px;
-  border-bottom-style: solid;
-  padding-top: 2%;
-  padding-bottom: 2%;
-  padding-right: 3%;
-}
-
-.specs-input {
-  border: none;
-  margin-top: 5%;
-}
-
-.specs-item {
-  margin-top: 1%;
-  margin-right: 2%;
-  margin-left: 2%;
-  cursor: auto;
-  width: 75%;
-}
-
-.specs-edit {
-  font-size: 20px;
-  margin-left: 2%;
-  margin-top: 2%;
+.span-unchecked {
   cursor: pointer;
-  color: black;
 }
 
-.specs-check {
+.style-check {
   font-size: 25px;
   width: 8%;
   margin-top: 2%;
@@ -51,22 +15,51 @@
   text-align: center;
 }
 
-.span-unchecked {
+.style-container {
+  margin-top: 2%;
+  width: 25%;
+  border-width: 1px;
+  border-style: solid;
+  padding: 1%;
+}
+
+.style-delete {
+  color: red;
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
   cursor: pointer;
 }
 
-.span-cheked {
-  background-color: green;
+.style-edit {
+  font-size: 20px;
+  margin-left: 2%;
+  margin-top: 2%;
+  cursor: pointer;
+  color: black;
 }
 
-input {
+.style-input {
+  border: none;
+  margin-top: 5%;
+}
+
+.style-item {
+  margin-top: 1%;
+  margin-right: 2%;
+  margin-left: 2%;
+  cursor: auto;
+  width: 75%;
+}
+
+.style-row {
+  border-width: 1px;
+  border-bottom-style: solid;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 3%;
 }
 
 button {
   margin-top: 3%;
-}
-
-.green {
-  color: green;
-  cursor: pointer;
 }
