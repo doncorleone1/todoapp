@@ -1,23 +1,44 @@
-# todoapp
+# to-do app
 
-<h1>Setting up environment</h1>
+#### Requirements
+* You need to have node.js installed in your machine.
+* You need to have Express.js installed in your machine.
+* You need to have MongoDB installed in your machine.
 
-1 - You need to have node.js installed in your machine;\
-2 - You need to have express.js installed in your machine;\
-3 - You need to have mongoDB installed in your machine;\
-4 - Open your command prompt and go to the root folder of this application (I will use C:\node\todoapp as an example) typing "cd C:\node\todoapp";\
-5 - Type "npm install" to install the node modules;\
-6 - Type mkdir data. You can create this folder somewhere else if you want to, but I am going to use this path as an example;\
-7 - Go to the bin folder of mongoDB. Example: type "cd C:\Program Files\MongoDB\Server\4.0\bin";\
-8 - Type "mongod --dbpath c:\node\todoapp\data\". This will initialize your server. You should see a message saying "[initandlisten] waiting for connections on port 27017";\
-9 - Open a new command prompt window (do not close the previous one);\
-10 - Again, go to the bin folder of mongoDB. Example: type "cd C:\Program Files\MongoDB\Server\4.0\bin";\
-11 - Type "mongo". This will initialize your client;\
-12 - In the client window, type "use todoapp". This will change the database to the one you created;\
-13 - Open a new command prompt window (do not close the previous one);\
-14 - Go to the root folder of this application typing "cd C:\node\todoapp";\
-15 - Type "npm install -S mongodb". This will install the mongodb module;\
-16 - Type "npm start". This will initialize your application;\
-17 - In your browser, go to "localhost:3000".
+#### Installing Requirements (In case you do not know how to install):
+##### Installing node.js:
+* Go to https://nodejs.org/en/
+* Download the version you prefer. I suggest the version "Recommended For Most Users".
+* Install it in the folder you prefer. I will use **C:\Program Files\Node** as example.
+
+##### Installing Express.js:
+* Open the command prompt and go to the node installation folder. Example: **CD C:\Program Files\Node**
+* With administrator permition, type **npm install -g express-generator**.
+
+##### Installing MongoDB:
+* Go to https://www.mongodb.com/download-center?jmp=nav#community
+* Download the community version.
+* Install it in the folder you prefer. I will use **C:\ProgramFiles\MongoDB** as example.
+
+##### Configuring MongoDB:
+* Open your command prompt and go to the root folder of this application (I will use **C:\todoapp** as an example) typing **CD C:\todoapp**.
+* Type **mkdir data**. You can create this folder somewhere else if you want to, but I am going to use this path as an example.
+* Go to the bin folder of mongoDB. Example: type **CD C:\Program Files\MongoDB\Server\4.0\bin**.
+* Type **mongod --dbpath c:\node\todoapp\data**. This will initialize your *server*. You should see a message saying ***[initandlisten] waiting for connections on port 27017***.
+* Open a new command prompt window. Do not close the previous one.
+* Again, go to the bin folder of mongoDB. Example: type **CD C:\Program Files\MongoDB\Server\4.0\bin**.
+* Type **mongo**. This will initialize your *client*.
+* In the client window, type **use todoapp**. This will change the database to the one created.
+* ***Do not close any of these command prompts while using the application***.
+
+##### Installing Node Modules:
+* Open a new command prompt and go to the root folder of this application. Example: type **CD C:\todoapp**.
+* Type **npm install** to install the standard node modules.
+* Type **npm install -S mongodb** to install the MongoDB module.
+* **Do not close the command prompt**.
+
+##### Initializing Application:
+* Type **npm start** to initialize your application.
+* In your browser, type **localhost:3000**.
 
 You are all set now.
