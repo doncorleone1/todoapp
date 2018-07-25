@@ -23,16 +23,15 @@ router.post('/items', function(req, res) {
 router.put('/items/:id', function(req, res) {
   var id = req.params.id;
   var myItem = {};
-  var status = "";
+  var status = '';
   global.db.findOne(id, (e, items) => {
     if(e) { return console.log(e); }
     myItem = { items };
     status =  myItem.items[0].status;
-    console.log("my status:" + status);
-    if(status==="done") {
-      status = "not done";
+    if(status==='done') {
+      status = 'not done';
     } else {
-      status = "done";
+      status = 'done';
     }
     global.db.update(id, status, (e, result) => {
             if(e) { return console.log(e); }

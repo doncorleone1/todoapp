@@ -16,18 +16,18 @@
 
     <div class="container style-container" id="mainContainer">
       <!-- Shows all items -->
-      <% items.forEach(function(item){ %>
-        <div class="row style-row" id= '<%= item._id %>'>
+      <% items.forEach(function(item) { %>
+        <div class="row style-row" id='<%= item._id %>'>
             <% if(item.status == 'not done') { %>
               <span class="material-icons span-unchecked style-check">radio_button_unchecked</span>
-              <input type="text" value= '<%= item.task %>' class="form-control style-item" readonly>
+              <input type="text" value='<%= item.task %>' class="form-control style-item" readonly>
             <% } else { %>
               <span class="glyphicon green style-check">&#xe089;</span>
-              <input type="text" value = '<%= item.task %>' class="form-control style-item" style="text-decoration: line-through;" readonly>
+              <input type="text" value='<%= item.task %>' class="form-control style-item text-line-through" readonly>
             <% } %>
               <span class="glyphicon glyphicon-trash style-delete"></span>
         </div>
-      <% }) %>
+      <% }); %>
 
       <div class="row style-input">
         <div class="col-sm-12">
@@ -39,7 +39,7 @@
       </div>
     </div>
 
-    <script src="javascripts/jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     <script src="/javascripts/mainpage.js"></script>
   </body>
