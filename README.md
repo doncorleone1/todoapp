@@ -12,7 +12,7 @@
 
 ##### Installing Express.js:
 * Open the command prompt and go to the node installation folder. Example: `CD C:\Program Files\Node`
-* With administrator permition, type `npm install -g express-generator`.
+* With administrator permission, type `npm install -g express-generator`.
 
 ##### Installing MongoDB:
 * Go to https://www.mongodb.com/download-center?jmp=nav#community
@@ -52,7 +52,15 @@
 * Node.JS
 
 ##### Version History:
-* Applying changes suggested by Andras P. Toth.
+* First commit
+* Database module added to .gitignore
+* Database path fixed
+* Layout finished
+* Ajax added
+* Function "Update" changed
+* Asynchronous functions implemented using Ajax
+* Readme file updated
+* Applying changes suggested by Andras P. Toth
 
-##### Authour:
-* **Matheus Lazarin**
+##### Author:
+* Matheus Lazarin
