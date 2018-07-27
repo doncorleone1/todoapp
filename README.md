@@ -60,7 +60,11 @@
 * Function "Update" changed
 * Asynchronous functions implemented using Ajax
 * Readme file updated
-* Applying changes suggested by Andras P. Toth
+* Removed unused files from GitHub based on Andras' suggestion
+* Removed inline CSS modification to external style sheet based on Andras' suggestion
+* Space character consistency applied on the project based on Andras' suggestion
+* JQuery added through CDN instead of locally based on Andras' suggestion
+* Alterations made on Readme file based on Andras' suggestion
 
 ##### Author:
 * Matheus Lazarin
